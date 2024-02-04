@@ -38,6 +38,7 @@ const LogInPage = () => {
                 className="form-control"
                 id="email"
                 aria-describedby="basic-addon3"
+                {...register("email")}
               />
             </div>
             <label htmlFor="password" className="form-label">
@@ -49,9 +50,10 @@ const LogInPage = () => {
                 className="form-control"
                 id="password"
                 aria-describedby="basic-addon3"
+                {...register("password")}
               />
             </div>
-            <button type="button" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary">
               會員登入
             </button>
           </form>
