@@ -21,16 +21,21 @@ const LogInPage = () => {
   return (
     <>
       <div className="nav">
-        <div>享樂酒店</div>
+        <img src="/src/assets/logo.png" width={200} />
       </div>
       <div className="content d-flex">
         <div className="login-bg" />
         <div className="signInfo d-flex justify-content-center align-items-center my-0 mx-auto">
           <form onSubmit={handleSubmit(logInHandler)}>
-            <div className="subSlogan text-primary">享樂酒店，誠摯歡迎</div>
-            <div className="slogan text-light">立即開始旅程</div>
+            <div className="subSlogan text-primary title-16-b mb-2">
+              享樂酒店，誠摯歡迎
+            </div>
+            <div className="slogan text-light h1-48-b mb-10">立即開始旅程</div>
             {/* 電子信箱 */}
-            <label htmlFor="email" className="form-label text-light">
+            <label
+              htmlFor="email"
+              className="form-label text-light title-16-b mb-2"
+            >
               電子信箱
             </label>
             <div className="input-group mb-3">
@@ -43,7 +48,10 @@ const LogInPage = () => {
               />
             </div>
             {/* 密碼 */}
-            <label htmlFor="password" className="form-label text-light">
+            <label
+              htmlFor="password"
+              className="form-label text-light title-16-b mb-2"
+            >
               密碼
             </label>
             <div className="input-group mb-3">
@@ -67,27 +75,30 @@ const LogInPage = () => {
                   {...register("checkbox")}
                 />
                 <label
-                  className="form-check-label text-light"
+                  className="form-check-label text-light title-16-b mb-10"
                   htmlFor="flexCheckDefault"
                 >
                   記住帳號
                 </label>
               </div>
               <div>
-                <a href="#" className="link-primary">
+                <a href="#" className="link-primary title-16-b">
                   忘記密碼
                 </a>
               </div>
             </div>
 
             {/* 會員登入 btn */}
-            <button type="submit" className="btn btn-primary">
-              會員登入
+            <button
+              type="submit"
+              className="btn btn-primary title-16-b mb-10 w-100"
+            >
+              <div className="py-1">會員登入</div>
             </button>
 
             {/* 前往註冊 */}
-            <div className="d-flex justify-content-start">
-              <span className="text-light">沒有會員嗎?</span>
+            <div className="d-flex justify-content-start title-16-b">
+              <span className="text-light me-2">沒有會員嗎?</span>
               <a href="#" className="link-primary">
                 前往註冊
               </a>
