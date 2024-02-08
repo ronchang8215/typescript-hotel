@@ -1,0 +1,13 @@
+body {
+  background-color: $dark;
+}
+
+.login-bg {
+  width: 50%;
+  background-color: #f5f5f5;
+  background-image: url("/src/assets/register.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
