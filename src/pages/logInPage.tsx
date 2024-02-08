@@ -15,7 +15,18 @@ const LogInPage = () => {
   });
 
   const logInHandler = (data: LogInForm) => {
-    console.log("data", data);
+      console.log("data", data);
+            fetch("https://freyja-773y.onrender.com/api/v1/user/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((res) => {
+        console.log(res);
+      });
   };
 
   return (
